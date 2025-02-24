@@ -1,4 +1,4 @@
 # Event Book App - E-ticket
 
 
-[](demo.png)
+![](demo.jpg)
