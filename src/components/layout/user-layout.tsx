@@ -8,11 +8,12 @@ import { ROUTES } from "@/routes/route-links"
 const { EVENTS, BOOKINGS } = ROUTES;
 const UserLayout = () => {
   const { pathname } = useLocation();
+  const defaultTabValue = pathname.split('/')[2];
 
   return (
     <>
         <MainContainer classes="mx-auto max-w-screen-2xl">
-          <Tabs defaultValue={pathname.slice(1)} className="w-full lg:p-4">
+          <Tabs defaultValue={defaultTabValue} className="w-full lg:p-4">
             <TabsList className="w-full bg-[none]">
               <NavLink to={BOOKINGS}>
                 <TabsTrigger value="bookings" className="text-lg">Bookings</TabsTrigger>

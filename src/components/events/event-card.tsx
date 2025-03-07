@@ -10,9 +10,11 @@ import {
 import { Badge } from "../ui/badge";
 import { Icons } from "../ui/icons";
 import { format } from "date-fns";
+import { useNavigate } from "react-router-dom";
 
 export function EventCard(event) {
   const {
+    _id,
     name,
     description,
     category,
@@ -21,13 +23,19 @@ export function EventCard(event) {
     endTime,
     priceInCents,
   } = event;
+
+  const navigate = useNavigate();
   
   console.log(event);
+
+  const handleBook = () => {
+    navigate(`book/${_id}`);
+  }
 
   return (
     <Card className="w-full shadow-none border-0">
       <CardHeader>
-        <Badge variant="outline">{category}</Badge>
+        <Badge variant="outline" className="mb-2">{category}</Badge>
         <CardTitle>{name}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
@@ -58,7 +66,7 @@ export function EventCard(event) {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full">Book</Button>
+        <Button className="w-full cursor-pointer" onClick={handleBook}>Book</Button>
       </CardFooter>
     </Card>
   );
