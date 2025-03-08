@@ -2,7 +2,7 @@ import AppConfig from '@/config/app.config'
 
 const Footer = () => {
   return (
-    <footer className='w-full bg-slate-300'>
+    <footer className='w-full bg-gray-100'>
       <div className=''></div>
         <div className='flex items-center justify-center p-4'>
             <div className='text-[11px]'>

@@ -30,6 +30,7 @@ import {
     ReceiptText,
     ScrollText,
     MapPin,
+    Minus,
     type XIcon as LucideIcon,
   } from "lucide-react";
   
@@ -37,6 +38,7 @@ import {
   
   export const Icons = {
     plus: (props: LucideProps) => <Plus {...props} />,
+    minus: (props: LucideProps) => <Minus {...props} />,
     trash: (props: LucideProps) => <Trash {...props} />,
     circlecheck: (props: LucideProps) => <CircleCheck {...props} />,
     circlexcheck: (props: LucideProps) => <CircleX {...props} />,

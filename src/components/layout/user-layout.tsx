@@ -16,10 +16,10 @@ const UserLayout = () => {
           <Tabs defaultValue={defaultTabValue} className="w-full lg:p-4">
             <TabsList className="w-full bg-[none]">
               <NavLink to={BOOKINGS}>
-                <TabsTrigger value="bookings" className="text-lg">Bookings</TabsTrigger>
+                <TabsTrigger value="bookings" className="text-md">Bookings</TabsTrigger>
               </NavLink>
               <NavLink to={EVENTS}>
-                <TabsTrigger value="events" className="text-lg">Events</TabsTrigger>
+                <TabsTrigger value="events" className="text-md">Events</TabsTrigger>
               </NavLink>
             </TabsList>
             <Outlet />

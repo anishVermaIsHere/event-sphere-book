@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className='p-2 bg-primary shadow-md shadow-indigo-200 w-full'>
-        <nav className="px-4 py-2 flex items-center justify-between mx-auto max-w-screen-2xl">
+        <nav className="px-4 flex items-center justify-between mx-auto max-w-screen-2xl">
           {/* <NavLink to="/"><img src={AppConfig.logoUrl} alt='brand logo' height={30} width={40} className='scale-150' /></NavLink> */}
           <NavLink to="/" className="text-white">
             <span className='text-sm leading-0'>{AppConfig.appName}</span> <br/> <span className='text-sm italic'>e-Ticket</span>
