@@ -7,7 +7,8 @@ import {
   ProtectedPage,
   AppLayout,
   UserLayout,
-  HomePage
+  HomePage,
+  BookEventTicketPage
 } from "./lazy-components";
 import Spinner from "@/components/ui/spinner"; 
 
@@ -16,7 +17,8 @@ const {
   LOGIN,
   EVENTS,
   EVENT,
-  BOOKINGS
+  BOOKINGS,
+  BOOK
 } = ROUTES;
 
 
@@ -66,6 +68,14 @@ const appRoutes = [
                 <Events />
               </Suspense>
             ),
+          },
+          {
+            path: BOOK,
+            element: (
+              <Suspense fallback={<Spinner />}>
+                <BookEventTicketPage />
+              </Suspense>
+            )
           },
           {
             path: EVENT,

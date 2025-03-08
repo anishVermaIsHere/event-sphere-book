@@ -10,6 +10,7 @@ export const ROUTES = {
   /* protected routes */
   LOGOUT: "logout",
   BOOKINGS: 'user/bookings',
+  BOOK: 'user/events/book/:id',
   EVENTS: "user/events",
   EVENT: "user/events/:id",
   ATTENDEES: "user/attendees",

@@ -8,7 +8,9 @@ const eventAPI = {
   async events() {
     return await axiosInstance.get(BASE_URL);
   },
-
+  async event(eventId: string) {
+    return await axiosInstance.get(`${BASE_URL}/${eventId}`);
+  },
 };
 
 export default eventAPI;

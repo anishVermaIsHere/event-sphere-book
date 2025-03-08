@@ -117,7 +117,11 @@
 
 
 .bg-primary {
-  @apply bg-indigo-400;
+  @apply bg-indigo-600;
+}
+
+.bg-secondary {
+  @apply bg-[var(--primary)];
 }
 
 @layer base {
